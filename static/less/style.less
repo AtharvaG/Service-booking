@@ -1,0 +1,156 @@
+.box-shadow (@x: 0, @y: 1px, @blur: 2px, @alpha: 0.33) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.timepicker {
+  @clock-padding: 5px;
+  
+  background-color: #F2F2F2;
+  position: absolute;
+  color: #8C8C8C;
+  border: 1px solid #B5B5B5;
+  .box-shadow(2px, 2px, 4px);
+  z-index: 2147483647;
+  
+  .clock {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    padding: @clock-padding;
+  }
+  
+  .done {
+    cursor: pointer;
+    text-align: center;
+    text-wrap: nowrap;
+    line-height: 34px;
+    font-size: 14px;
+    display: block;
+    border-top: 1px solid #DEDEDE;
+    &:hover {
+      background-color: #DEDEDE;
+      color: #848484;
+    }
+  }
+  
+  .meridiem {
+    position: absolute;
+    bottom: @clock-padding;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    &.selected {
+      background-color: #D6F0F9;
+      color: #6D828C;
+    }
+    &.am {
+      left: @clock-padding;
+    }
+    &.pm {
+      right: @clock-padding;
+    }
+  }
+  
+  .bubble {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #D6F0F9;
+      color: #6D828C;
+    }
+    
+    &.selected {
+      color: #D6F0F9;
+      background-color: #33B4E4
+    }
+  }
+  
+  .unit {
+    top: @clock-padding;
+    background-color: white;
+    
+    &.hour {
+      left: @clock-padding;
+    }
+    &.minute {
+      right: @clock-padding;
+    }
+  }
+  
+  
+  .face {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      margin: -3px 0 0 -3px;
+      background-color: #33B4E4;
+      border-radius: 50%;
+      content: "";
+      display: block;
+    }
+  }
+  
+  .hand {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    pointer-events:none;
+    background-color: #8C8C8C;
+    
+    &.minute {
+      margin: -30% 0 0 -1px;
+      padding: 30% 1px 0;
+      border-radius: 1px 1px 0 0;
+    }
+    
+    &.hour {
+      margin: -23% 0 0 -2px;
+      padding: 23% 2px 0;
+      border-radius: 2px 2px 0 0;
+    }
+    
+    &.selected {
+      background-color: #33B4E4;
+    }
+  }
+  
+  .time {
+    background-color: #F2F2F2;
+  }
+}
+
+
+body {
+  margin: 10px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+
+	<link rel="stylesheet" href="css.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<link rel="stylesheet" href="timepicker/jquery.timepicker.min.css">
+
+	
+
+</head>
+<body>
+
+
+
+
+
+<div class="container">
+  <h1>Stack Bootstrap modals nicely</h1>
+  
+  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#test-modal">Show Modal</button>
+
+    <div class="modal fade" id="test-modal" data-modal-index="1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Plumber</h4>
+      </div>
+      <div class="modal-body">
+        
+		
+		<h4>Our Promise:</h4>
+              &emsp;&bull;Background checked and trained technicians<br>
+              &emsp;&bull;30-day service guarantee<br>
+              &emsp;&bull;Customer Protection of upto Rs.10000 against damages
+          <h4>Pricing:</h4>   
+              &emsp;&bull;0 -1hr. - Rs. 199/-<br>
+              &emsp;&bull;1 - 1.5hr. - Rs. 299/-<br>
+              &emsp;&bull;1.5 - 2hr. - Rs. 399/-<br>
+              &emsp;&bull;2 - 2.5hr. - Rs. 499/-<br> 
+              &emsp;&bull;2.5 - 3hr.- Rs. 599/-<br> 
+              &emsp;&bull;Above 3hrs. - Rs. 599/- + Rs. 50/- per half an hour.<br> 
+              &emsp;&bull;Night Service Charges (8pm - 12am) - Rs. 150 over and above the standard rates<br> 
+              &emsp;&bull;Visiting Charges - Rs. 99/- if no service is availed<br> 
+              &emsp;&bull;Time spent on procurement of material will be included in work hours<br> 
+              &emsp;&bull;Charges for helper will be extra in case of large scope of work (Rs 100 per hr for first 3 hrs and Rs 50 per hour from the fourth hour) 
+             <h4>Pay Online / Cash Post Service:</h4>   
+              &emsp;&bull;Pay Online / Cash Post Service<br> 
+              &emsp;&bull;After service completion - Online payment link will be sent via sms / email
+	
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#test-modal-2">Next</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+    <div class="modal fade" id="test-modal-2" data-modal-index="2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Plumber</h4>
+      </div>
+      <div class="modal-body">
+        
+		<fieldset>
+            
+             <b>When do you require the service?</b><br>
+          
+          <label><h6>PICK A DATE</h6></label><br>
+          <input id="datepicker" /><br>
+	
+		
+          <label><h6>PICK A SERVICE TIME</h6></label><br>
+		 <input class="timepicker" /><br>
+
+	<label><h6>SELECT THE DURATION(IN HOURS)</h6></label><br>
+	<input type="number" min="0" style="width:50px"> <br>
+           
+        
+        </fieldset>
+	<br>
+      </div>
+      <div class="modal-footer">
+	<br><br><br>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#test-modal-3">Next</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <div class="modal fade" id="test-modal-3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Payment</h4>
+      </div>
+      <div class="modal-body">
+        <p>Amount to pay for the Service:</p><br>
+		<b>500Rs<b>
+        
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+	<script src="js.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="timepicker/jquery.timepicker.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
+	<script>
+	$(document).ready(function(){
+	    $('input.timepicker').timepicker({});
+	});
+	
+
+$('#timeformatExample1').timepicker({ 'timeFormat': 'H:i:s' });
+$('#timeformatExample2').timepicker({ 'timeFormat': 'h:i A' });
+
+
+
+</script>
+
+
+</body>
+</html>
+

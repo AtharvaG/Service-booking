@@ -1,0 +1,442 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Services</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <meta charset="UTF-8">
+  
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{{ url_for('static', filename = 'css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ url_for('static', filename= 'css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo-center {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.text-animation {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.text-animation p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  color: #b5b5b7;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #b5b5b7;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-text span {
+  display: inline-block;
+}
+
+#cap {
+    opacity: 0;
+    visibility: hidden;
+} 
+</style>
+<!-- font-awesome icons -->
+<link href="{{ url_for('static', filename = 'css/font-awesome.css') }}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="{{ url_for('static', filename = 'js/jquery-1.11.1.min.js') }}"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{{ url_for('static', filename= 'js/move-top.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/easing.js') }}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+<body>
+	<!-- header -->
+	<div class="agileits_header">
+		<div class="container">
+			
+			<div class="agile-login" style="margin-left: 700px">
+				<ul>
+					
+					<li><a href="/logout">Logout</a></li>
+				</ul>
+			</div>	
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="logo_products">
+		<div class="container">
+		<div class="w3ls_logo_products_left1">
+				
+			</div>
+			<div class="w3ls_logo_products_left">
+				<h1><a href="/">Home Services</a></h1>
+			</div>
+		
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- navigation -->
+	<div class="navigation-agileits">
+		<div class="container">
+			<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header nav_2">
+								<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div> 
+							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="/" class="act">Home</a></li>	
+									<!-- Mega Menu -->
+									
+
+																		
+										
+									
+									
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="about.html">About Us</a></li>
+								</ul>
+							</div>
+							</nav>
+			</div>
+		</div>
+		
+<!-- //navigation -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+				<li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+				<li class="active">Dashboard</li>
+			</ol>
+		</div>
+	</div>
+	<div class="products">
+		<div class="container">
+			<div class="col-md-4 products-left">
+				<div class="categories">
+					<h2>Dashboard</h2>
+					<ul class="cate">
+						
+						<li><a href="/pastbookingsc"><i class="fa fa-arrow-right" aria-hidden="true"></i>Past Bookings</a></li>
+            <li><a href="/ongoing"><i class="fa fa-arrow-right" aria-hidden="true"></i>Current Bookings</a></li>
+            <li><a href="/spending"><i class="fa fa-arrow-right" aria-hidden="true"></i>Money Spent</a></li>
+
+					</ul>
+				</div>																																												
+			</div>
+			
+
+
+
+
+  
+<div class="logo-center">
+<svg xmlns="http://www.w3.org/2000/svg"
+                         version="1.1"
+                         viewBox="0 0 225 225"
+                         height="225"
+                         width="225">
+                        <defs id="defs4359">
+                            <filter id="filter5176"
+                                    style="color-interpolation-filters:sRGB;">
+                                <feFlood id="feFlood5178"
+                                         result="flood"
+                                         flood-color="rgb(61,61,61)"
+                                         flood-opacity="0.498039" />
+                                <feComposite id="feComposite5180"
+                                             result="composite1"
+                                             operator="in"
+                                             in2="SourceGraphic"
+                                             in="flood" />
+                                <feGaussianBlur id="feGaussianBlur5182"
+                                                result="blur"
+                                                stdDeviation="0"
+                                                in="composite1" />
+                                <feOffset id="feOffset5184"
+                                          result="offset"
+                                          dy="3.1"
+                                          dx="-1" />
+                                <feComposite id="feComposite5186"
+                                             result="composite2"
+                                             operator="over"
+                                             in2="offset"
+                                             in="SourceGraphic" />
+                            </filter>
+                        </defs>
+                        <g id="camera-tape">
+                            <path d="m 96.046131,88.158927 -5.47519,-3.1611 0,-31.225694 6.26305,-3.615974"
+                                  style="fill:#9d939f;fill-opacity:1;fill-rule:evenodd;stroke:#201d20;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 97.842715,108.38622 c -0.02568,-2.21044 2.497295,-8.78639 3.122595,-8.13882 0.69343,0.71809 1.89338,0.51275 2.36777,-0.4052 0.24171,-0.4677 0.43947,-2.433893 0.43947,-4.369313 l 0,-3.51894 8.38443,-20.54063 8.38444,-20.540632 0.10966,24.676611 c 0.10585,23.818734 0.13798,24.692314 0.92443,25.128184 1.0698,0.59291 2.00604,0.18658 2.3145,-1.00451 0.13657,-0.52732 0.26554,-13.818163 0.28662,-29.535199 l 0.0383,-28.57643 1.20855,-2.637824 1.20855,-2.637824 0.0325,36.650969 0.0325,36.650968 -1.67129,-1.56365 c -3.15276,-2.9497 -10.84838,-4.45957 -17.43249,-3.42022 -3.87896,0.61231 -8.24031,2.69935 -9.110872,4.35983 l -0.619284,1.18118 -0.02043,-1.75855 z"
+                                  style="fill:#7f7382;fill-opacity:1;stroke:#7a7a7a;stroke-width:1.21785533;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 96.046131,110.35704 0,-79.386794 c 13.219759,-8.770767 23.733849,-5.817001 33.587199,0"
+                                  style="fill:#7f7382;fill-opacity:1;fill-rule:evenodd;stroke:#201d20;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 128.52934,88.301817 5.47519,-3.1611 0,-31.225691 -6.26305,-3.615974"
+                                  style="fill:#7f7382;fill-opacity:1;fill-rule:evenodd;stroke:#201d20;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 128.31029,110.14477 0,-79.386789"
+                                  style="fill:none;fill-rule:evenodd;stroke:#201d20;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 122.36689,38.611756 0,61.103044"
+                                  style="fill:none;fill-rule:evenodd;stroke:#201d20;stroke-width:2.84815502;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 98.25954,69.627291 0,-37.737254 2.90232,-1.47731 c 2.99231,-1.523114 7.20891,-2.824431 9.15188,-2.824431 l 1.10618,0 0,37.97492 0,37.974924 -2.03345,0 c -2.86027,0 -6.74063,1.09491 -9.11042,2.57065 l -2.01651,1.25576 0,-37.737259 z m 5.0794,30.935389 c 0.60827,-1.148791 0.60827,-61.555522 0,-62.70431 -0.49529,-0.935411 -1.68238,-1.088237 -2.44732,-0.315067 -0.38694,0.391102 -0.50944,8.060632 -0.50944,31.896072 0,17.259639 0.12736,31.509895 0.28302,31.667225 0.58651,0.59283 2.25116,0.25418 2.67374,-0.54392 z"
+                                  style="fill:#9d939f;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 101.98953,38.691046 0,60.628254"
+                                  style="fill:none;fill-rule:evenodd;stroke:#201d20;stroke-width:2.98935461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 92.957522,83.657503 c -0.112636,-0.293524 -0.1544,-6.916224 -0.09281,-14.717112 0.08597,-10.888635 0.235255,-14.224493 0.642644,-14.360189 0.417803,-0.139165 0.53066,2.990766 0.53066,14.717111 0,9.948371 -0.145388,14.893868 -0.437852,14.893868 -0.240818,0 -0.530008,-0.240155 -0.642643,-0.533678 z"
+                                  style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <g transform="translate(0,-827.36216)" id="cap">
+                            <ellipse ry="5.2401896"
+                                     rx="12.913325"
+                                     cy="937.40936"
+                                     cx="112.07548"
+                                     style="fill:#f2b632;fill-opacity:1;stroke:#ac7a2b;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 59.220748,948.32171 c 37.526304,-13.14462 72.878752,-12.65304 106.292422,0 11.65901,13.6923 12.12829,47.5687 8.06917,61.68819 -0.74359,2.5224 -3.47559,2.9026 -7.68358,2.4423 -35.43081,-3.876 -70.861616,-4.2293 -106.292424,0 -4.198894,0.5012 -6.864423,0.068 -7.683581,-2.4423 -4.079938,-13.49965 -5.031919,-47.4112 7.297993,-61.68819 z"
+                                  style="fill:#f2b632;fill-opacity:1;stroke:#ac7a2b;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 40.03038,1012.2706 c 48.29521,-7.0069 97.17432,-7.0069 146.63736,0 4.78674,0.6781 8.7266,3.2882 8.7266,7.3726 0,4.0844 -3.96045,8.1828 -8.7266,7.3726 -48.87912,-8.3094 -97.758241,-8.0276 -146.63736,0 -4.77063,0.7835 -8.726605,-3.2882 -8.726605,-7.3726 0,-4.0844 3.942159,-6.6784 8.726605,-7.3726 z"
+                                  style="fill:#f2b632;fill-opacity:1;stroke:#ac7a2b;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path transform="translate(0,827.36216)"
+                                  d="m 53.309769,179.42408 c -1.049176,-3.73848 -1.83627,-12.10043 -1.851204,-19.66686 -0.02959,-14.99288 2.303569,-26.23103 7.076891,-34.08733 l 1.752562,-2.88451 5.306604,-1.65068 c 14.184146,-4.41217 26.931152,-6.7833 40.224058,-7.48227 l 5.625,-0.29577 0,1.27568 c 0,1.2552 -0.0426,1.27969 -2.6533,1.52523 -3.31975,0.31222 -8.1487,1.92794 -11.267996,3.77015 -3.237355,1.91194 -8.46032,7.19024 -10.342601,10.45217 -0.848837,1.47101 -2.252372,4.80898 -3.118966,7.41772 -2.880165,8.67026 -2.489503,15.4857 1.3312,23.22397 4.387986,8.88721 13.080929,14.87603 23.292223,16.04668 2.35725,0.27024 0.60168,0.40173 -8.49056,0.63593 -14.724922,0.37929 -37.805053,1.97172 -44.86496,3.0955 -1.517958,0.24162 -1.57623,0.20192 -2.018951,-1.37561 z"
+                                  style="fill:#f5c866;fill-opacity:1;stroke:none;stroke-width:1.6981132;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path transform="translate(0,827.36216)"
+                                  d="m 36.055928,196.73971 c -1.643458,-1.00218 -2.900419,-3.53251 -2.519906,-5.07272 0.4391,-1.77734 2.329479,-3.44045 4.664731,-4.10392 1.173939,-0.33352 6.81486,-1.18266 12.535378,-1.88696 17.546859,-2.16033 31.795909,-3.21693 49.749129,-3.68899 l 10.90478,-0.28674 0.13295,4.88594 0.13295,4.88594 -11.25,0.25584 c -16.693724,0.37963 -34.209057,1.9029 -52.261178,4.54502 -10.194182,1.49203 -10.394554,1.49976 -12.088834,0.46659 z"
+                                  style="fill:#f5c866;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path transform="translate(0,827.36216)"
+                                  d="m 102.38,109.07818 c 1.15655,-0.85855 5.34996,-1.96247 7.45476,-1.96247 1.43316,0 1.60892,0.11594 1.60892,1.06132 0,1.04038 -0.0649,1.06141 -3.2901,1.06599 -1.80955,0.003 -4.05424,0.11898 -4.9882,0.2587 -1.63175,0.24409 -1.66244,0.22754 -0.78538,-0.42354 z"
+                                  style="fill:#f5c866;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                        <g id="camera-lens">
+                            <circle r="27.382076"
+                                    cy="144.94812"
+                                    cx="112.28774"
+                                    style="fill:#7f7382;fill-opacity:1;stroke:#201d20;stroke-width:3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter5176)" />
+                            <circle r="21.741409"
+                                    cy="144.73581"
+                                    cx="112.49998"
+                                    style="fill:#554d56;fill-opacity:1;stroke:#201d20;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <circle r="2.8277225"
+                                    cy="126.48586"
+                                    cx="144.06133"
+                                    style="fill:#3d3d3d;fill-opacity:0.49803922;stroke:#3d3d3d;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922" />
+                            <circle r="2.971698"
+                                    cy="124.81133"
+                                    cx="144.76414"
+                                    id="red-light"
+                                    style="fill:#d1952a;fill-opacity:1;stroke:#201d20;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <circle r="16.159866"
+                                    cy="144.73581"
+                                    cx="112.49998"
+                                    style="fill:#596088;fill-opacity:1;stroke:#201d20;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 108.18507,158.74926 c -2.52128,-0.82772 -4.43826,-2.10508 -6.47466,-4.31432 -2.680974,-2.90851 -3.562776,-5.24364 -3.604384,-9.54489 -0.03216,-3.32481 0.0851,-3.85542 1.450859,-6.56499 0.817215,-1.62131 1.678005,-3.0028 1.912865,-3.06999 0.23486,-0.0672 4.99681,4.45062 10.58212,10.03957 11.33544,11.34283 10.91622,10.56722 6.80016,12.58102 -2.78281,1.3615 -7.90339,1.78086 -10.66696,0.8736 z"
+                                  style="fill:#777ea6;fill-opacity:1;stroke:none;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <path d="m 107.19839,164.24322 c -3.26567,-0.91014 -6.4362,-2.78825 -8.949052,-5.3011 -4.230147,-4.23014 -6.157977,-9.31262 -5.800994,-15.29356 0.246917,-4.13687 1.235715,-7.09802 3.518042,-10.53545 l 1.533718,-2.30995 1.008095,0.94706 1.008095,0.94706 -1.024123,1.34269 c -6.265554,8.21456 -4.017571,20.04066 4.885469,25.70127 5.61295,3.56874 13.64592,3.34079 19.04846,-0.54055 l 2.09038,-1.50179 0.90838,0.96692 0.90838,0.96693 -1.39525,1.0623 c -1.98684,1.51272 -4.87458,2.92121 -7.33865,3.57942 -2.61427,0.69833 -7.83944,0.68263 -10.40095,-0.0312 z"
+                                  style="fill:#6a606c;fill-opacity:1;stroke:none;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <circle r="3.790746"
+                                    cy="150.09775"
+                                    cx="107.068"
+                                    style="fill:#9ca1bf;fill-opacity:1;stroke:none;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                            <circle r="2.9416895"
+                                    cy="139.12263"
+                                    cx="118.99057"
+                                    style="fill:#777ea6;fill-opacity:1;stroke:none;stroke-width:2.81900001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                        </g>
+                    </svg>
+  <div class="text-animation">
+    <h2 class="welcome-text">
+      <span class="text-enter">W</span>
+      <span class="text-enter">e</span>
+      <span class="text-enter">l</span>
+      <span class="text-enter">c</span>
+      <span class="text-enter">o</span>
+      <span class="text-enter">m</span>
+      <span class="text-enter">e</span>
+    </h2>
+    <p>To The Dashboard...</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!--- beverages -->
+<!-- //footer -->
+<div class="footer">
+		<div class="container">
+			<div class="w3_footer_grids">
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Contact</h3>
+					
+					<ul class="address">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>PICT<span>Pune</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@homeservices.com">info@homeservices.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Information</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
+
+					</ul>
+				</div>
+				<!--  <div class="col-md-3 w3_footer_grid">
+					<h3>Services</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s1.html">Electrician</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s2.html">Carepenter</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s3.html">Plumber</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s4.html">Maid</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s5.html">Dry Cleaning</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s1.html">Tiffin</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s2.html">Physiotherapy</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s3.html">Yoga</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s4.html">Dietician</a></li>
+					</ul>
+				</div>
+				 -->
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Profile</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="/logout">Logout</a></li>
+					</ul>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="footer-copy">
+			
+			<div class="container">
+				<p>© 2017 Home Services. All rights reserved </p>
+			</div>
+		</div>
+		
+	</div>	
+
+<!-- //footer -->	
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="{{ url_for('static', filename = 'js/minicart.min.js') }}"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+<!-- main slider-banner -->
+<script src="{{ url_for('static', filename = 'js/skdslider.min.js') }}"></script>
+<link href="{{ url_for('static', filename = 'css/skdslider.css') }}" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+						
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+</script>	
+<!-- //main slider-banner --> 
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+
+    <script  src="{{ url_for('static', filename = 'js/index.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{{ url_for('static', filename = 'css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ url_for('static', filename = 'css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="{{ url_for('static', filename = 'css/font-awesome.css') }}" rel="stylesheet"> 
+
+  
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="{{ url_for('static', filename = 'js/jquery-1.11.1.min.js') }}"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+
+
+ 	  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  
+  <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
+
+
+<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="{{ url_for('static', filename = 'css/s22.css')}}">
+
+
+</head>
+	
+<body>
+<!-- header -->
+	<div class="agileits_header">
+		<div class="container">
+			<div class="w3l_offers">
+			</div>
+			<div class="agile-login">
+				<ul>
+					{% if session.logged_in %}
+					<!-- <li><a href="registered.html"> Create Account </a></li> -->
+					<li><a href="/dashboard">{{ session['id'] }}</a></li>
+					<li><a href="/logout">Logout</a></li>
+					{% endif %}
+					
+				</ul>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="logo_products">
+		<div class="container">
+		<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
+					
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html">Home Services</a></h1>
+			</div>
+
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- navigation -->
+	<div class="navigation-agileits">
+		<div class="container">
+			<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header nav_2">
+								<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div> 
+							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="index.html" class="act">Home</a></li>	
+									<!-- Mega Menu -->
+									
+
+																		
+										
+									
+									
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="about.html">About Us</a></li>
+								</ul>
+							</div>
+							</nav>
+			</div>
+		</div>
+		
+<!-- //navigation -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+				<li class="active">Serviceman</li>
+			</ol>
+		</div>
+	</div>
+
+						<div class="clearfix"> </div>
+				</div>
+
+				
+
+				<div class="container" style="">
+<br>
+<header >
+   <h1>Rate Card</h1>
+</header>
+  <br><br>
+
+<article>
+  <h4>Our Promise:</h4>
+              &emsp;&bull;Background checked and trained technicians<br>
+              &emsp;&bull;30-day service guarantee<br>
+              &emsp;&bull;Customer Protection of upto Rs.10000 against damages
+              <br>
+          <h4>Pricing:</h4>   
+              &emsp;&bull;0 -1hr. - Rs. 199/-<br>
+              &emsp;&bull;1 - 1.5hr. - Rs. 299/-<br>
+              &emsp;&bull;1.5 - 2hr. - Rs. 399/-<br>
+              &emsp;&bull;2 - 2.5hr. - Rs. 499/-<br> 
+              &emsp;&bull;2.5 - 3hr.- Rs. 599/-<br> 
+              &emsp;&bull;Above 3hrs. - Rs. 599/- + Rs. 50/- per half an hour.<br> 
+              &emsp;&bull;Night Service Charges (8pm - 12am) - Rs. 150 over and above the standard rates<br> 
+              &emsp;&bull;Visiting Charges - Rs. 99/- if no service is availed<br> 
+              &emsp;&bull;Time spent on procurement of material will be included in work hours<br> 
+              &emsp;&bull;Charges for helper will be extra in case of large scope of work (Rs 100 per hr for first 3 hrs and Rs 50 per hour from the fourth hour)
+              <br> 
+             <h4>Pay Online / Cash Post Service:</h4>   
+              &emsp;&bull;Pay Online / Cash Post Service<br> 
+              &emsp;&bull;After service completion - Online payment link will be sent via sms / email
+
+</article><br>
+
+<header >
+   <h3>When do you require the service?</h3>
+</header>
+  <br><br>
+<form action="" method="post">
+<article>
+  		
+
+  		<label><h5>PICK A DATE</h5></label><br>
+          <input type="date" id="datepicker" name="date" value = "{{ request.method.date }}" ><br><br>
+	
+		
+          <label><h5>PICK A SERVICE TIME</h5></label><br>
+		 <input id="input" name="time" value="{{ request.method.time }}"><br><br>
+
+	<label><h5>SELECT THE DURATION(IN HOURS)</h5></label><br>
+	<input type="number" min="0" style="width:50px" name="duration"><br><br>	
+
+</article><br>
+
+
+<footer>
+	
+				 <!-- <h3><a href="od1.html" >Next</a></h3>  -->
+				 <h3><input type="submit" value="Next" style="margin-left: 700px" class="button"> </h3>
+								
+											
+										
+			
+
+</footer>
+</form>		
+</div>
+
+<br><br>
+
+
+
+
+
+
+
+
+				<!-- <nav class="numbering">
+					<ul class="pagination paging">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="active"><a href="#">1<span class="sr-only">(current)</span></a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav> -->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!--- groceries --->
+<!-- //footer -->
+<div class="footer">
+		<div class="container">
+			<div class="w3_footer_grids">
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Contact</h3>
+					
+					<ul class="address">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>PICT<span>Pune</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@homeservices.com">info@homeservices.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Information</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
+
+					</ul>
+				</div>
+				 <div class="col-md-3 w3_footer_grid">
+					<h3>Services</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s1.html">Electrician</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s2.html">Carepenter</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s3.html">Plumber</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s4.html">Maid</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s5.html">Dry Cleaning</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s1.html">Tiffin</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s2.html">Physiotherapy</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s3.html">Yoga</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="s4.html">Dietician</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-md-3 w3_footer_grid">
+					<h3>Profile</h3>
+					<ul class="info"> 
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		
+		<div class="footer-copy">
+			
+			<div class="container">
+				<p>© 2017 Home Services. All rights reserved | Design by G4</p>
+			</div>
+		</div>
+		
+	</div>	
+
+<!-- //footer -->	
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+
+
+
+
+
+
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="{{ url_for('static', filename = 'js/minicart.min.js') }}"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+
+    <script  src="{{ url_for('static', filename = 'js/j22.js') }}"></script>
+	<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src="js/datepicker.js"></script> -->
+<!-- main slider-banner -->
+<!-- <script src="js/skdslider.min.js"></script>
+<link href="css/skdslider.css" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+						
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+</script>	 -->
+<!-- //main slider-banner --> 
+
+</body>
+</html>
